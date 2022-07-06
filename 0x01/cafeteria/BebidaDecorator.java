@@ -14,7 +14,7 @@ public class BebidaDecorator extends Bebida{
     }
 
     @Override
-  public  double obterPreco() {
+  public double obterPreco() {
         return bebidaDecorada.obterPreco();
     }
 }
