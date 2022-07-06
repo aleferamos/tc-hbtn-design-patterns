@@ -12,7 +12,7 @@ public class Ladrao extends Personagem{
     }
 
     @Override
-    double getDanoAtaque() {
+    public double getDanoAtaque() {
         return (forca * 0.5) + (destreza * 0.35) + (vigor * 0.1) + (inteligencia * 0.05);
     }
 }

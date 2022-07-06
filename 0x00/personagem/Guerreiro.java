@@ -10,7 +10,7 @@ public class Guerreiro extends Personagem{
     }
 
     @Override
-    double getDanoAtaque() {
+   public double getDanoAtaque() {
         return (forca * 0.8) + (vigor * 0.05) + (destreza * 0.1) + (inteligencia * 0.05);
     }
 }
