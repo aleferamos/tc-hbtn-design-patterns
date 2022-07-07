@@ -26,11 +26,11 @@ public class Pedido {
         String dentroDaCaixa = "\tDentro da Caixa:\n";
 
         for (ItemPedido item : itensForaCaixa) {
-            foraDaCaixa += "\t\t\t- " + item.getTipo() + item.getNome() + "\n";
+            foraDaCaixa += "\t\t- " + item.getTipo() + item.getNome() + "\n";
         }
 
         for (ItemPedido item: itensDentroCaixa) {
-            dentroDaCaixa += "\t\t\t- " + item.getTipo() + item.getNome() + "\n";
+            dentroDaCaixa += "\t\t- " + item.getTipo() + item.getNome() + "\n";
         }
 
         return foraDaCaixa + dentroDaCaixa;
