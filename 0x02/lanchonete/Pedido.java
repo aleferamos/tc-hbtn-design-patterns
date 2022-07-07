@@ -21,9 +21,15 @@ public class Pedido {
 
     @Override
     public String toString() {
+        System.out.println("Fora da Caixa: ");
+        itensForaCaixa.forEach(itemPedido -> {
+            System.out.println("       " + itemPedido.toString());
+        });
 
-        return ("Fora da Caixa:       \n" + itensForaCaixa  +
-                "Dentro da caixa: \n" + itensDentroCaixa).replace("[", "")
-                .replaceAll("\\]", "").replace(", ","");
+        System.out.println("Dentro da Caixa: ");
+        itensDentroCaixa.forEach(itemPedido -> {
+            System.out.println("       " + itemPedido.toString());
+        });
+        return "";
     }
 }
