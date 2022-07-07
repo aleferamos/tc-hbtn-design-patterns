@@ -22,11 +22,11 @@ public class Pedido {
     @Override
     public String toString() {
 
-        String foraDaCaixa = "\tFora da Caixa: \n";
+        String foraDaCaixa = "\tFora da Caixa:\n";
         String dentroDaCaixa = "\tDentro da Caixa:\n";
 
         for (ItemPedido item : itensForaCaixa) {
-            foraDaCaixa += "\t\t- " + item.getTipo() + item.getNome() + "\n";
+            foraDaCaixa += "\t\t- " + item.getTipo() + " " +item.getNome() + "\n";
         }
 
         for (ItemPedido item: itensDentroCaixa) {
