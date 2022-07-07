@@ -11,8 +11,11 @@ public class ItemPedido {
         this.nome = nome;
     }
 
-    @Override
-    public String toString() {
-        return " - " + tipo + " " + nome;
+    public TipoItemPedido getTipo() {
+        return tipo;
+    }
+
+    public String getNome() {
+        return nome;
     }
 }

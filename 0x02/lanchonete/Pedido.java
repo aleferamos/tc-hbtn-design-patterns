@@ -21,15 +21,18 @@ public class Pedido {
 
     @Override
     public String toString() {
-        System.out.println("Fora da Caixa: ");
-        itensForaCaixa.forEach(itemPedido -> {
-            System.out.println("       " + itemPedido.toString());
-        });
 
-        System.out.println("Dentro da Caixa: ");
-        itensDentroCaixa.forEach(itemPedido -> {
-            System.out.println("       " + itemPedido.toString());
-        });
-        return "";
+        String foraDaCaixa = "\tFora da Caixa:\n";
+        String dentroDaCaixa = "\tDentro da Caixa:\n";
+
+        for (ItemPedido item : itensForaCaixa) {
+            foraDaCaixa += "\t\t\t- " + item.getTipo() + item.getNome() + "\n";
+        }
+
+        for (ItemPedido item: itensDentroCaixa) {
+            dentroDaCaixa += "\t\t\t- " + item.getTipo() + item.getNome() + "\n";
+        }
+
+        return foraDaCaixa + dentroDaCaixa;
     }
 }
