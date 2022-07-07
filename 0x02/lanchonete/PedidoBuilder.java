@@ -43,7 +43,7 @@ public class PedidoBuilder extends PedidoAbstractBuilder{
 
     }
 
-    Pedido build(){
+   public Pedido build(){
         return pedido;
     }
 }
