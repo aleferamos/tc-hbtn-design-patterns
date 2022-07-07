@@ -21,10 +21,9 @@ public class Pedido {
 
     @Override
     public String toString() {
-        String result = ("Fora da Caixa: \n" + itensForaCaixa  +
-                "Dentro da caixa: \n" + itensDentroCaixa).replace("[", "")
-                .replaceAll("\\]", "").replace(", ","");
 
-        return result;
+        return ("    Fora da Caixa: \n" + itensForaCaixa  +
+                "    Dentro da caixa: \n" + itensDentroCaixa).replace("[", "")
+                .replaceAll("\\]", "").replace(", ","");
     }
 }

@@ -13,6 +13,6 @@ public class ItemPedido {
 
     @Override
     public String toString() {
-        return "        - " + tipo + " " + nome + "\n";
+        return "            - " + tipo + " " + nome + "\n";
     }
 }
