@@ -30,7 +30,7 @@ public class Pedido {
         }
 
         for (ItemPedido item: itensDentroCaixa) {
-            dentroDaCaixa += "\t\t- " + item.getTipo() + item.getNome() + "\n";
+            dentroDaCaixa += "\t\t- " + item.getTipo() + " " + item.getNome() + "\n";
         }
 
         return foraDaCaixa + dentroDaCaixa;
