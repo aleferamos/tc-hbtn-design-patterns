@@ -13,28 +13,20 @@ public class Impressao {
         this.paginasTotais = paginasTotais;
     }
 
-    public void setPaginasColoridas(int paginasColoridas) {
-        this.paginasColoridas = paginasColoridas;
-    }
-
-    public void setEhFrenteVerso(boolean ehFrenteVerso) {
-        this.ehFrenteVerso = ehFrenteVerso;
-    }
-
     public void setValorColoridasFrenteVerso(double valorColoridasFrenteVerso) {
         this.valorColoridasFrenteVerso = valorColoridasFrenteVerso;
     }
 
-    public void setValorPretoBrancoFrenteVerso(double valorPretoBrancoFrenteVerso) {
-        this.valorPretoBrancoFrenteVerso = valorPretoBrancoFrenteVerso;
-    }
-
-    public void setValorColoridasFrenteApenas(double valorColoridasFrenteApenas) {
-        this.valorColoridasFrenteApenas = valorColoridasFrenteApenas;
-    }
-
     public void setValorPretoBrancoFrenteApenas(double valorPretoBrancoFrenteApenas) {
         this.valorPretoBrancoFrenteApenas = valorPretoBrancoFrenteApenas;
+    }
+
+    public boolean isEhFrenteVerso() {
+        return ehFrenteVerso;
+    }
+
+    public void setEhFrenteVerso(boolean ehFrenteVerso) {
+        this.ehFrenteVerso = ehFrenteVerso;
     }
 
     public double calcularTotal(){
@@ -44,7 +36,12 @@ public class Impressao {
 
     @Override
     public String toString() {
-        return String.format("total de paginas: %d, total coloridas: %d, total preto e branco: %d, frente e verso. " +
-                "total: %.2f", paginasTotais, paginasColoridas, paginasTotais - paginasColoridas, calcularTotal());
+        if(ehFrenteVerso){
+            return String.format("total de paginas: %d, total coloridas: %d, total preto e branco: %d, frente e verso. " +
+                    "total: %.2f", paginasTotais, paginasColoridas, paginasTotais - paginasColoridas, calcularTotal());
+        } else {
+            return String.format("total de paginas: %d, total coloridas: %d, total preto e branco: %d, frente apenas. " +
+                    "total: %.2f", paginasTotais, paginasColoridas, paginasTotais - paginasColoridas, calcularTotal());
+        }
     }
 }

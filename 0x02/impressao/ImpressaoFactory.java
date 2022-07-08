@@ -5,6 +5,7 @@ public class ImpressaoFactory {
         Impressao impressao = new Impressao();
         
         if(ehFrenteVerso){
+            impressao.setEhFrenteVerso(true);
             if(tamanho.equals(TamanhoImpressao.A2)){
                 impressao.paginasColoridas = QuantidadePaginasColoridas;
                 impressao.setPaginasTotais(TotalPages);
@@ -22,6 +23,7 @@ public class ImpressaoFactory {
                 impressao.valorPretoBrancoFrenteVerso = (TotalPages - QuantidadePaginasColoridas) * 0.10;
             }
         } else {
+            impressao.setEhFrenteVerso(false);
             if (tamanho.equals(TamanhoImpressao.A2)){
                 impressao.paginasColoridas = QuantidadePaginasColoridas;
                 impressao.setPaginasTotais(TotalPages);
