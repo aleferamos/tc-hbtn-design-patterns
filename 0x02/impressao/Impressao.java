@@ -38,10 +38,10 @@ public class Impressao {
     public String toString() {
         if(ehFrenteVerso){
             return String.format("total de paginas: %d, total coloridas: %d, total preto e branco: %d, frente e verso. " +
-                    "total: %.2f   ", paginasTotais, paginasColoridas, paginasTotais - paginasColoridas, calcularTotal());
+                    "total: R$ %.2f", paginasTotais, paginasColoridas, paginasTotais - paginasColoridas, calcularTotal());
         } else {
             return String.format("total de paginas: %d, total coloridas: %d, total preto e branco: %d, frente apenas. " +
-                    "total: %.2f   ", paginasTotais, paginasColoridas, paginasTotais - paginasColoridas, calcularTotal());
+                    "total: R$ %.2f", paginasTotais, paginasColoridas, paginasTotais - paginasColoridas, calcularTotal());
         }
     }
 }
