@@ -10,7 +10,7 @@ public class MediaPlayerAdapter implements MediaPlayer {
     }
 
     @Override
-    public void reproduzir(String nomeArquivo, TipoMedia tipoMedia) {
+    public void reproduzir(TipoMedia tipoMedia, String nomeArquivo) {
         advancedMediaPlayer.reproduzirVlc(nomeArquivo);
     }
 }
