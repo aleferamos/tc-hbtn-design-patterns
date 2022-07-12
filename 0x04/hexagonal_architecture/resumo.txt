@@ -1,3 +1,7 @@
+[Cenário]: Você foi convidado para escrever uma artigo para uma revista de Java e Padrões de Projeto, sobre Arquitetura Hexagonal.
+
+[Instruções]: - Escreva um breve resumo (máximo 500 palavras) utilizando apenas o material disponibilizado nesse projeto. O resumo deverá conter as seguintes informações:
+
 O que é Arquitetura Hexagonal e por quem ela foi criada ?
 
 R: A arquitetura Hexagonal é uma arquitetura de projeto para desenvolvimento de apis, Criada por Alistair Cockburn.
